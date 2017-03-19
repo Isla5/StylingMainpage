@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    padding: 20px 0 90px 0;
+    overflow: hidden;
+    background-color: #CF4647;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+span {
+    font-size: 14pt;
+}
+
+.col-1 {
+    width: 13%;
+    padding: 0 20px;
+}
+
+.col-2 {
+    width: 17%;
+    padding: 0 20px;
+}
+
+.col-3 {
+    width: 27%;
+    padding: 0 20px;
+}
+
+.col-4 {
+    width: 33%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.col-5 {
+    width: 40%;
+    padding: 0 20px;
+}
+
+.col-8 {
+    width: 63%;
+    padding: 0 20px;
+}
+
+.col-9 {
+    width: 77%;
+    padding: 0 20px;
+}
+
+.col-10 {
+    width: 80%;
+    padding: 0 20px;
+}
+
+.col-11 {
+    width: 90%;
+    padding: 0 20px;
+}
+
+.code-strings {
+    margin: auto;
+    font-family: Menlo, 'DejaVu Sans Mono', 'Lucida Console', monospace;
+    font-size: 14pt;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 100%;
+    height: 40px;
+}
+
+.titles {
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 68px;
+}
+
+.second-container {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.editor-window pre {
+    overflow-x: auto;
+    border-radius: 0 0 5px 5px;
+    padding-left: 20px;
+    height: 100%;
+    word-wrap: break-word;
+}
+
+.subtitles {
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 200;
+}
+
+
+.about {
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: 100;
+}
+
+.logo {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 900;
+}
+
+.header-titles2, .header-titles {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 30px;
+    color: inherit;
+    margin-left: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.baseline {
+    align-items: baseline;
+}
+
+.spread {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centervertical {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-part {
+    margin: auto;
+    width: 100%;
+}
+
+.text-part {
+    max-width: 700px;
+}
+
+header .titles {
+    margin: 120px 0 0 0;
+}
+
+
+.bttn {
+    display: inline-block;
+    height: 40px;
+    line-height: 38px;
+    padding: 0 30px;
+    background-color: #fff;
+    color: #CF4647;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: 1px solid white;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+.editor-col {
+  width: 100%
+}
+
+.editor-window {
+    background-color: #141414;
+    border-radius: 10px;
+    margin: 20px
+}
+
+.editor-window .editor-menubar {
+    background-color: #E5E4E4;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.editor-button {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+}
+
+
+.editor-filename {
+    color: #141414;
+    font-family: Menlo, 'DejaVu Sans Mono', 'Lucida Console', monospace;
+    font-size: 12pt;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.close {
+    margin-left: 10px;
+    background-color: red;
+}
+
+.minimize {
+    background-color: yellow;
+}
+
+.maximize {
+    background-color: green;
+}
+
+.white-part {
+    margin: 0;
+    padding: 90px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    color: black;
+    background-color: white;
+}
+
+.about {
+    margin-top: 10px;
+}
+
+p.about {
+    color: rgba(0, 0, 0, .5);
+}
+
+.about {
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.images {
+    margin-bottom: 30px;
+    color: black
+}
+
+.hljs {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-family: monospace;
+    font-size: 13pt
+}
+
+.hljs-keyword {
+    color: orange;
+}
+
+.hljs-built_in {
+    color: brown
+}
+
+.hljs-string {
+    color: green;
+}
+
+pre {
+    overflow-x: auto;
+    border-radius: 7px;
+    padding-left: 18px;
+    height: 100%
+}
+
+.whatisgulp {
+    padding: 90px 0;
+    background-color: #3A3E64;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.first-container {
+    max-width: 1080px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+col-12 {
+    width: 100%;
+    padding: 0 20px;
+}
+
+header .central {
+    margin: 60px 0 60px
+}
+
+.computer {
+    width: 590px;
+    height: 390px;
+    background: linear-gradient(to bottom, rgba(247, 251, 254, 1) 0%, rgba(221, 226, 232, 1) 100%);
+    border-radius: 18px;
+    position: relative;
+    margin: auto;
+    padding: 25px 25px;
+}
+
+.comp-window {
+    height: 100%;
+    color: #85FF00;
+    background-color: #002b36;
+}
+
+.for-comp {
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+}
+
+div.comp-window {
+    height: 100%;
+    color: #85FF00;
+    background-color: #002b36;
+    border-radius: 7px;
+}
+
+@media (max-width: 444px) {
+    .logo {
+        display: none
+    }
+    .bttn {
+        display: block;
+        width: 70vw;
+        text-align: center;
+    }
+    .code-strings {
+        font-size: 13pt;
+    }
+}
+
+@media (max-width: 750px) {
+    .white-part {
+        flex-wrap: wrap;
+        background-color: white
+    }
+    .white-part .col-4 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .computer{
+      width: 70vw;
+      height: calc(80vw * 0.7);
+      margin-left: 40px;
+      margin-right: 40px
+    }
+}
+
+@media (max-width: 900px) {
+    header .titles {
+        font-size: 32px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px
+    }
+    .subtitles {
+        font-size: 26px;
+    }
+}

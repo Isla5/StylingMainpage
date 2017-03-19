@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="./gulp.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="first-container">
+            <div class='second-container'>
+                <img class="logo" src="http://gulpjs.com/img/gulp-white-text.svg">
+                <div class="header-parts spread">
+                    <div class="header-titles">
+                        Docs
+                    </div>
+                    <div class="header-titles">
+                        Plugins
+                    </div>
+                    <div class="header-titles">
+                        Twitter
+                    </div>
+                    <div class="header-titles">
+                        Contribute
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="first-container">
+            <div class="col-12">
+                <h1 class="titles text-center">Automate and enhance your workflow</h1>
+            </div>
+        </div>
+        <div class="first-container">
+            <div class="central col-12">
+                <div class='computerwrapper'>
+                    <div class="computer">
+                        <div class="for-comp">
+                            <div class="comp-window">
+                                <pre><code>
+<span class="code-strings">$ npm install gulp-cli -g</span>
+<span class="code-strings">$ npm install gulp -D</span>
+<span class="code-strings">$ touch gulpfile.js</span>
+<span class="code-strings">$ gulp --help</span></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-part">
+            <div class="col-12 text-center">
+                <h2 class="about">
+          gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something.
+        </h2>
+                <a class="bttn" href="https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md">GET STARTED</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="white-part">
+        <div class="first-container flex baseline">
+            <div class="col-4">
+                <b class="images center"><img class="for-comp-img" src="http://gulpjs.com/img/browser.svg"></b>
+                <h4 class="subtitles center">Simple Usage</h4>
+                <p class="about">
+                    By preferring code over configuration, node best prdevactices, and a minimal API surface - gulp makes things simple like never before.
+                </p>
+            </div>
+            <div class="col-4">
+                <b class="images center"><img class="for-comp-img" src="http://gulpjs.com/img/guage.svg"></b>
+                <h4 class="subtitles center">Efficient Builds</h4>
+                <p class="about">
+                    Using the power of node streams, gulp gives you fast builds that don't write intermediary files to disk.
+                </p>
+            </div>
+            <div class="col-4">
+                <b class="images center"><img class="for-comp-img" src="http://gulpjs.com/img/atom.svg"></b>
+                <h4 class="subtitles center">Quality Ecosystem</h4>
+                <p class="about">
+                    By enforcing strict guidelines, we ensure our plugins stay simple and work as expected.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="whatisgulp">
+        <div class="first-container">
+            <div class="editor-col">
+                <div class="editor-window">
+                    <div class="editor-menubar">
+                        <span class="editor-button close"></span>
+                        <span class="editor-button minimize"></span>
+                        <span class="editor-button maximize"></span>
+                        <span class="editor-filename">gulpfile.js</span>
+                    </div>
+                    <pre><code class="javascript hljs">
+<span class="hljs-keyword">var</span> gulp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp'</span>);
+<span class="hljs-keyword">var</span> pug = <span class="mobile-show"> </span><span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-pug'</span>);
+<span class="hljs-keyword">var</span> less = <span class="mobile-show"> </span><span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-less'</span>);
+<span class="hljs-keyword">var</span> minifyCSS = <span class="mobile-show"></span><span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-csso'</span>);
+
+gulp.task(<span class="hljs-string">'html'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>){;
+ <span class="hljs-keyword">return</span> gulp.src(<span class="mobile-show"></span><span class="hljs-string">'client/templates/*.pug'</span><span class="mobile-show"></span>)
+   .pipe(pug())
+   .pipe(gulp.dest(<span class="mobile-show"></span><span class="hljs-string">'build/html'</span><span class="mobile-show"></span>))
+});
+
+gulp.task(<span class="hljs-string">'css'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+ <span class="hljs-keyword">return</span> gulp.src(<span class="mobile-show"></span><span class="hljs-string">'client/templates/*.less'</span><span class="mobile-show"><br />    </span>)
+   .pipe(less())
+   .pipe(minifyCSS()).pipe(gulp.dest(<span class="mobile-show"></span><span class="hljs-string">'build/css'</span><span class="mobile-show"><br />    </span>))
+});
+
+gulp.task(<span class="hljs-string">'default'</span>, <span class="mobile-show"></span>[ <span class="hljs-string">'html'</span>, <span class="hljs-string">'css'</span> ]<span class="mobile-show"></span>);
+         </code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
