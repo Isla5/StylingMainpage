@@ -27,12 +27,12 @@
             </div>
         </div>
         <div class="first-container">
-            <div class="col-12">
+            <div class="wholepage">
                 <h1 class="titles text-center">Automate and enhance your workflow</h1>
             </div>
         </div>
         <div class="first-container">
-            <div class="central col-12">
+            <div class="central wholepage">
                 <div class='computerwrapper'>
                     <div class="computer">
                         <div class="for-comp">
@@ -49,32 +49,32 @@
             </div>
         </div>
         <div class="text-part">
-            <div class="col-12 text-center">
-                <h2 class="about">
+            <div class="wholepage text-center">
+                <h2 class="about-white">
           gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something.
         </h2>
-                <a class="bttn" href="https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md">GET STARTED</a>
+                <button class="bttn">GET STARTED</a>
             </div>
         </div>
     </header>
 
     <div class="white-part">
         <div class="first-container flex baseline">
-            <div class="col-4">
+            <div class="usage">
                 <b class="images center"><img class="for-comp-img" src="http://gulpjs.com/img/browser.svg"></b>
                 <h4 class="subtitles center">Simple Usage</h4>
                 <p class="about">
                     By preferring code over configuration, node best prdevactices, and a minimal API surface - gulp makes things simple like never before.
                 </p>
             </div>
-            <div class="col-4">
+            <div class="features2cols">
                 <b class="images center"><img class="for-comp-img" src="http://gulpjs.com/img/guage.svg"></b>
                 <h4 class="subtitles center">Efficient Builds</h4>
                 <p class="about">
                     Using the power of node streams, gulp gives you fast builds that don't write intermediary files to disk.
                 </p>
             </div>
-            <div class="col-4">
+            <div class="features2cols">
                 <b class="images center"><img class="for-comp-img" src="http://gulpjs.com/img/atom.svg"></b>
                 <h4 class="subtitles center">Quality Ecosystem</h4>
                 <p class="about">
@@ -107,9 +107,10 @@ gulp.task(<span class="hljs-string">'html'</span>, <span class="hljs-function"><
 });
 
 gulp.task(<span class="hljs-string">'css'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
- <span class="hljs-keyword">return</span> gulp.src(<span class="mobile-show"></span><span class="hljs-string">'client/templates/*.less'</span><span class="mobile-show"><br />    </span>)
+ <span class="hljs-keyword">return</span> gulp.src(<span class="mobile-show"></span><span class="hljs-string">'client/templates/*.less'</span><span class="mobile-show">    </span>)
    .pipe(less())
-   .pipe(minifyCSS()).pipe(gulp.dest(<span class="mobile-show"></span><span class="hljs-string">'build/css'</span><span class="mobile-show"><br />    </span>))
+   .pipe(minifyCSS())
+   .pipe(gulp.dest(<span class="mobile-show"></span><span class="hljs-string">'build/css'</span><span class="mobile-show"></span>))
 });
 
 gulp.task(<span class="hljs-string">'default'</span>, <span class="mobile-show"></span>[ <span class="hljs-string">'html'</span>, <span class="hljs-string">'css'</span> ]<span class="mobile-show"></span>);
@@ -119,5 +120,27 @@ gulp.task(<span class="hljs-string">'default'</span>, <span class="mobile-show">
         </div>
     </div>
 </body>
-
+<div class="footer1">
+    <div class="flex text-center">
+        <div class="wholepage">
+            <h4 class="subtitles">
+            "Builds can be the most awful sinkhole for teams
+            to waste their time with - gulp is a serious win for
+            any project."
+          </h4>
+            <p class="about">Eric, Co-founder @ stae</p>
+        </div>
+    </div>
+</div>
+<div class="red-bg">
+    <div class="wholepage text-center">
+        <div class="center vertical text-center">
+            <h3 class="subtitles">Become a backer</h1>
+          <p class="about-white">
+            Support the community and keep development going strong.
+          </p>
+          <button class="bttn">DONATE</a>
+      </div>
+    </div>
+  </div>
 </html>
